@@ -121,7 +121,6 @@ public class MainControllerScript : MonoBehaviour
 
     public void Reload()
     {
-        SceneManager.UnloadScene("Level1");
         SceneManager.LoadScene("Level1");
     }
 
@@ -140,7 +139,7 @@ public class MainControllerScript : MonoBehaviour
 
     public void Quit()
     {
-        Quit();
+        Application.Quit();
     }
 
     public void NextLevel()

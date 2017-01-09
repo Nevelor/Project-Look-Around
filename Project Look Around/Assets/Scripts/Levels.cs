@@ -14,6 +14,11 @@ public class Levels : MonoBehaviour {
         levelsMenu.enabled = false;
     }
 
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
     public void Level1()
     {
         SceneManager.LoadScene("Level1");
