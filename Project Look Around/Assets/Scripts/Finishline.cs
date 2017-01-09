@@ -7,6 +7,6 @@ public class Finishline : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadSceneAsync("MainMenue", LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync("MainMenu");
     }
 }
