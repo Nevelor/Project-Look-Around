@@ -16,7 +16,8 @@ public class CameraController : MonoBehaviour {
 	}
 	
 	
-	void Update () {
+	void LateUpdate ()
+    {
         Vector3 forward = Input.GetAxis("Vertical") * transform.TransformDirection(Vector3.forward) * MoveSpeed;
         transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * RotationSpeed * Time.deltaTime, 0));
         charContr.Move(forward * Time.deltaTime);

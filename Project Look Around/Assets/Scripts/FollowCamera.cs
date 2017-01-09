@@ -26,7 +26,7 @@ public class FollowCamera : MonoBehaviour {
 
 
 
-    void LateUpdate()
+    void FixedUpdate()
     {
         Vector3 toPos = target.position + (target.rotation * defaultDistance);
         Vector3 curPos = Vector3.Lerp(myT.position, toPos, distanceDamp * Time.deltaTime);
