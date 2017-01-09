@@ -14,6 +14,7 @@ public class TutorialScript : MonoBehaviour
     public void Back()
     {
         pauseMenu.enabled = true;
+        Time.timeScale = 0;
         tutorialMenu.enabled = false;
 
     }

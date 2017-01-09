@@ -10,7 +10,9 @@ public class MainControllerScript : MonoBehaviour
     public Canvas levelWin;
     public Canvas levelLose;
 
-
+    public Canvas steuerungTutorial;
+    public Canvas rätselTutorial;
+    public Canvas farbenTutorial;
 
     // Use this for initialization
     private void Start()
@@ -88,12 +90,13 @@ public class MainControllerScript : MonoBehaviour
         levelLose = levelLose.GetComponent<Canvas>();
         levelWin.enabled = false;
         levelLose.enabled = false;
+
+        steuerungTutorial.enabled = false;
+        rätselTutorial.enabled = false;
+        farbenTutorial.enabled = false;
     }
 
-    private void EnableWinLoseMenu()
-    {
-
-    }
+   
 
     private void EnablePauseMenu()
     {
@@ -145,5 +148,33 @@ public class MainControllerScript : MonoBehaviour
     public void NextLevel()
     {
         SceneManager.LoadScene("MoreSoon");
+    }
+
+
+    public void FarbenTutorial()
+    {
+        farbenTutorial.enabled = true;
+        tutorialMenu.enabled = false;
+    }
+
+    public void SteuerungTutorial()
+    {
+        steuerungTutorial.enabled = true;
+        tutorialMenu.enabled = false;
+    }
+    
+    public void RätselTutorial()
+    {
+        rätselTutorial.enabled = true;
+        tutorialMenu.enabled = false;
+    }
+
+    public void BackTutorial()
+    {
+        farbenTutorial.enabled = false;
+        rätselTutorial.enabled = false;
+        steuerungTutorial.enabled = false;
+
+        tutorialMenu.enabled = true;
     }
 }
