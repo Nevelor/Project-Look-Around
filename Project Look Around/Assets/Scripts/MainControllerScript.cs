@@ -121,7 +121,7 @@ public class MainControllerScript : MonoBehaviour
 
     public void Reload()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Tutorial");
     }
 
     public void Tutorial()
@@ -144,6 +144,6 @@ public class MainControllerScript : MonoBehaviour
 
     public void NextLevel()
     {
-        SceneManager.LoadScene("Level2");
+        SceneManager.LoadScene("MoreSoon");
     }
 }
