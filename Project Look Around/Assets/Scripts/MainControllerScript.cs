@@ -122,10 +122,8 @@ public class MainControllerScript : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Reload()
-    {
-        SceneManager.LoadScene("Tutorial");
-    }
+    
+
 
     public void Tutorial()
     {
@@ -145,11 +143,62 @@ public class MainControllerScript : MonoBehaviour
         Application.Quit();
     }
 
-    public void NextLevel()
+    public void NextLevelTutorialTo1()
+    {
+        Load1();
+    }
+
+    public void NextLevel1To2()
+    {
+        Load2();
+    }
+
+    public void NextLevel2To3()
+    {
+        Load3();
+    }
+
+    public void NextLevel3To4()
+    {
+        Load4();
+    }
+
+    public void NextLevel4To5()
     {
         SceneManager.LoadScene("MoreSoon");
     }
 
+
+    /// <summary>
+    /// nun alle Reload Funktionen für die Level
+    /// </summary>
+    /// Beginnend mit dem Tutorial
+
+    public void LoadTutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void Load1()
+    {
+        SceneManager.LoadScene("Level1");
+    }
+
+    public void Load2()
+    {
+        SceneManager.LoadScene("Level2");
+    }
+
+
+    public void Load3()
+    {
+        SceneManager.LoadScene("Level3");
+    }
+
+    public void Load4()
+    {
+        SceneManager.LoadScene("Level4");
+    }
 
     public void FarbenTutorial()
     {

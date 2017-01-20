@@ -28,3 +28,13 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+Project Look Around/Library/CurrentLayout.dwlt
+*.dwlt
+Project Look Around/Library/UnityAssemblies/UnityEngine.Advertisements.xml
+*.dll
+Project Look Around/Library/UnityAssemblies/UnityEngine.Purchasing.xml
+*.dwlt
+Project Look Around/Library/CurrentLayout.dwlt
+Project Look Around/Library/CurrentLayout.dwlt
+*.txt
+Project Look Around/Library/UnityAssemblies/version.txt
