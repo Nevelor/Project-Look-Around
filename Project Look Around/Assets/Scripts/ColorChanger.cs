@@ -33,27 +33,30 @@ public class ColorChanger : MonoBehaviour {
         /// Appears when GameObject
         /// is red
         /// </summary>
-        if (other.CompareTag("Red"))
+        if (other.CompareTag("RedCube"))
         {
             ColorRed();
+            //other.gameObject.SetActive(false);
         }
 
         /// <summary>
         /// Appears when GameObject
         /// is blue
         /// </summary>
-        if (other.CompareTag("Blue"))
+        if (other.CompareTag("BlueCube"))
         {
             ColorBlue();
+           //other.gameObject.SetActive(false);
         }
 
         /// <summary>
         /// Appears when GameObject
         /// is yellow
         /// </summary>
-        if (other.CompareTag("Yellow"))
+        if (other.CompareTag("YellowCube"))
         {
             ColorYellow();
+            //other.gameObject.SetActive(false);
         }
     }
 
