@@ -1,6 +1,6 @@
-﻿using System.Collections;
+﻿using UnityEngine;
+using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
 
 public class PlayerMovementCaplsule : MonoBehaviour {
 
@@ -17,6 +17,34 @@ public class PlayerMovementCaplsule : MonoBehaviour {
 
     void Update()
     {
+
+        if(Input.GetMouseButton(1))
+        {
+
+            // Get mouse input
+            float moveHorizontal = Input.GetAxis("Mouse Y");
+
+            Debug.Log("Mouse used! " + moveHorizontal);
+
+            // Check for changes
+            if (moveHorizontal == 0)
+            {
+                return;
+            }
+            
+            // Calculate camera rotation
+            float newY = transform.rotation.eulerAngles.x + (moveHorizontal * 10f);
+            float newX = 0f;
+            float newZ = 0f;
+
+            // Set new camera rotation
+            transform.rotation = Quaternion.Euler(newX, newY, newZ);
+
+        }
+
+        return;
+        /*
+
         CharacterController controller = gameObject.GetComponent<CharacterController>();
 
         if (controller.isGrounded)
@@ -34,6 +62,6 @@ public class PlayerMovementCaplsule : MonoBehaviour {
         moveDir.y -= gravity * Time.deltaTime;
 
         controller.Move(moveDir * Time.deltaTime);
-
+        */
     }
 }
