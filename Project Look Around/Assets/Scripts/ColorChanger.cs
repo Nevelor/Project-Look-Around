@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class ColorChanger : MonoBehaviour {
     public GameObject player;
+    public GameObject leftArm;
+    public GameObject rightArm;
 
 
 	// Use this for initialization
@@ -67,6 +69,8 @@ public class ColorChanger : MonoBehaviour {
     private void ColorWhite()
     {
         player.GetComponent<Renderer>().material.color = Color.white;
+        leftArm.GetComponent<Renderer>().material.color = Color.white;
+        rightArm.GetComponent<Renderer>().material.color = Color.white;
     }
 
     /// <summary>
@@ -75,6 +79,8 @@ public class ColorChanger : MonoBehaviour {
     private void ColorRed()
     {
         player.GetComponent<Renderer>().material.color = Color.red;
+        leftArm.GetComponent<Renderer>().material.color = Color.red;
+        rightArm.GetComponent<Renderer>().material.color = Color.red;
     }
 
     /// <summary>
@@ -83,6 +89,8 @@ public class ColorChanger : MonoBehaviour {
     private void ColorBlue()
     {
         player.GetComponent<Renderer>().material.color = Color.blue;
+        leftArm.GetComponent<Renderer>().material.color = Color.blue;
+        rightArm.GetComponent<Renderer>().material.color = Color.blue;
     }
 
     /// <summary>
@@ -91,6 +99,8 @@ public class ColorChanger : MonoBehaviour {
     private void ColorBlack()
     {
         player.GetComponent<Renderer>().material.color = Color.black;
+        leftArm.GetComponent<Renderer>().material.color = Color.black;
+        rightArm.GetComponent<Renderer>().material.color = Color.black;
     }
 
     /// <summary>
@@ -99,5 +109,7 @@ public class ColorChanger : MonoBehaviour {
     private void ColorYellow()
     {
         player.GetComponent<Renderer>().material.color = Color.yellow;
+        leftArm.GetComponent<Renderer>().material.color = Color.yellow;
+        rightArm.GetComponent<Renderer>().material.color = Color.yellow;
     }
 }

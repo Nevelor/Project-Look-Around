@@ -4,16 +4,15 @@ using System.Collections.Generic;
 
 public class PlayerMovementCaplsule : MonoBehaviour {
 
+    public GameObject player;
+
     public float speed = 10f;
     public float jumpForce = 8f;
     public float gravity = 30f;
     private Vector3 moveDir = Vector3.zero;
 
-    void Start()
-    {
-
-    }
-
+    
+    
 
     void Update()
     {
@@ -22,7 +21,7 @@ public class PlayerMovementCaplsule : MonoBehaviour {
         {
 
             // Get mouse input
-            float moveHorizontal = Input.GetAxis("Mouse Y");
+            float moveHorizontal = Input.GetAxis("Mouse Y")*-1;
 
             Debug.Log("Mouse used! " + moveHorizontal);
 
@@ -33,19 +32,20 @@ public class PlayerMovementCaplsule : MonoBehaviour {
             }
             
             // Calculate camera rotation
-            float newY = transform.rotation.eulerAngles.x + (moveHorizontal * 10f);
+            float newY = transform.rotation.eulerAngles.y + (moveHorizontal * 50f);
             float newX = 0f;
             float newZ = 0f;
 
+            
             // Set new camera rotation
             transform.rotation = Quaternion.Euler(newX, newY, newZ);
 
         }
 
-        return;
-        /*
+        
 
-        CharacterController controller = gameObject.GetComponent<CharacterController>();
+
+        CharacterController controller = player.GetComponent<CharacterController>();
 
         if (controller.isGrounded)
         {
@@ -62,6 +62,6 @@ public class PlayerMovementCaplsule : MonoBehaviour {
         moveDir.y -= gravity * Time.deltaTime;
 
         controller.Move(moveDir * Time.deltaTime);
-        */
+        
     }
 }
