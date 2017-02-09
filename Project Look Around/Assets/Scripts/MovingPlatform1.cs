@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Valerian Wolff
+/// </summary>
 public class MovingPlatform1 : MonoBehaviour
 {
 

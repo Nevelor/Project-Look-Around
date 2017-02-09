@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Valerian Wolff
+/// </summary>
 public class SphereMovement : MonoBehaviour {
-
+    /*
     public float moveSpeed = 5.0f;
     public float drag = 0.5f;
     public float terminalRotationSpeed = 25.0f;
@@ -11,7 +14,7 @@ public class SphereMovement : MonoBehaviour {
     
 
     private Rigidbody thisRigidbody;
-    private Transform camTransform;
+    //private Transform camTransform;
 
 
     void Start () {
@@ -42,5 +45,5 @@ public class SphereMovement : MonoBehaviour {
             dir.Normalize();
 
         return dir;
-    }
+    }*/
 }

@@ -3,20 +3,35 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
-public class ColorChanger : MonoBehaviour {
+/// <summary>
+/// Class for changing the color 
+/// of the player
+/// Dominik Betzler
+/// </summary>
+public class ColorChanger : MonoBehaviour
+{
+    /// <summary>
+    /// class gets the GameObjects for player,
+    /// leftArm and rightArm
+    /// </summary>
     public GameObject player;
     public GameObject leftArm;
     public GameObject rightArm;
 
 
-	// Use this for initialization
+	/// <summary>
+    /// it starts with calling the 
+    /// ColorWhite method
+    /// </summary>
 	void Start ()
     {
         ColorWhite();
 	}
 	
-	// Update is called once per frame
+	/// <summary>
+    /// calls the method ColorWhite 
+    /// every time you press the q button
+    /// </summary>
 	void Update ()
     {
         if(Input.GetKeyDown(KeyCode.Q))
@@ -38,7 +53,7 @@ public class ColorChanger : MonoBehaviour {
         if (other.CompareTag("RedCube"))
         {
             ColorRed();
-            //other.gameObject.SetActive(false);
+            
         }
 
         /// <summary>
@@ -48,7 +63,7 @@ public class ColorChanger : MonoBehaviour {
         if (other.CompareTag("BlueCube"))
         {
             ColorBlue();
-           //other.gameObject.SetActive(false);
+           
         }
 
         /// <summary>
@@ -58,13 +73,13 @@ public class ColorChanger : MonoBehaviour {
         if (other.CompareTag("YellowCube"))
         {
             ColorYellow();
-            //other.gameObject.SetActive(false);
+            
         }
     }
 
 
     /// <summary>
-    /// changes colot to white
+    /// changes color to white
     /// </summary>
     private void ColorWhite()
     {
@@ -74,7 +89,7 @@ public class ColorChanger : MonoBehaviour {
     }
 
     /// <summary>
-    /// changes colot to red
+    /// changes color to red
     /// </summary>
     private void ColorRed()
     {
@@ -84,7 +99,7 @@ public class ColorChanger : MonoBehaviour {
     }
 
     /// <summary>
-    /// changes colot to blue
+    /// changes color to blue
     /// </summary>
     private void ColorBlue()
     {
