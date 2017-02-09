@@ -20,7 +20,7 @@ public class MainControllerScript : MonoBehaviour
     public Canvas levelLose;
 
     public Canvas steuerungTutorial;
-    public Canvas rätselTutorial;
+    public Canvas goalOfTheGame;
     public Canvas farbenTutorial;
 
     /// <summary>
@@ -60,7 +60,7 @@ public class MainControllerScript : MonoBehaviour
         levelLose.enabled = false;
 
         steuerungTutorial.enabled = false;
-        rätselTutorial.enabled = false;
+        goalOfTheGame.enabled = false;
         farbenTutorial.enabled = false;
     }
 
@@ -193,7 +193,7 @@ public class MainControllerScript : MonoBehaviour
     /// </summary>
     public void RätselTutorial()
     {
-        rätselTutorial.enabled = true;
+        goalOfTheGame.enabled = true;
         tutorialMenu.enabled = false;
     }
 
@@ -206,7 +206,7 @@ public class MainControllerScript : MonoBehaviour
     public void BackTutorial()
     {
         farbenTutorial.enabled = false;
-        rätselTutorial.enabled = false;
+        goalOfTheGame.enabled = false;
         steuerungTutorial.enabled = false;
 
         tutorialMenu.enabled = true;

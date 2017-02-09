@@ -5,8 +5,6 @@ using UnityEngine.UI;
 
 /// <summary>
 /// Class for switching between 2 Cameras
-/// Not used at the moment!
-/// maybe later for bird view Camera
 /// Dominik Betzler
 /// </summary>
 public class CamSwitcher : MonoBehaviour {
