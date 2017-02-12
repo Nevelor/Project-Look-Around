@@ -18,10 +18,10 @@ public class ColorWallBehaviour : MonoBehaviour {
     public GameObject blackWalls;
 
 
-    
-	
-	
-	void LateUpdate ()
+
+
+
+    private void LateUpdate ()
     {
         AllWallsEndabled();
 	}

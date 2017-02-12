@@ -21,7 +21,7 @@ public class Finishline : MonoBehaviour
     /// timescale to 0 and enables the win menu
     /// </summary>
     /// <param name="other">the thing he colides with</param>
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Player"))
         {

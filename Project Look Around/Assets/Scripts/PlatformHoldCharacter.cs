@@ -7,11 +7,11 @@ using UnityEngine;
 /// </summary>
 public class PlatformHoldCharacter : MonoBehaviour {
 
-     void OnTriggerEnter(Collider col)
+    private void OnTriggerEnter(Collider col)
     {
         col.transform.parent = gameObject.transform;
     }
-     void OnTriggerExit(Collider col)
+    private void OnTriggerExit(Collider col)
     {
         col.transform.parent = null;
     } 

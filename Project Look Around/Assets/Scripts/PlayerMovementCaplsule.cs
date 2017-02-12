@@ -23,13 +23,13 @@ public class PlayerMovementCaplsule : MonoBehaviour
     public float gravity = 30f;
     private Vector3 moveDir = Vector3.zero;
 
-    
-    
+
+
     /// <summary>
     /// every frame the two methods
     /// are called
     /// </summary>
-    void Update()
+    private void Update()
     {
         PlayerMovement();
         PlayerRotation();

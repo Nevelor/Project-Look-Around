@@ -16,15 +16,15 @@ public class MovingPlatform1 : MonoBehaviour
     public float smooth; 
     public float resetTime; //Time that is used till Method resets
 
-    
-    void Start()
+
+    private void Start()
     {
         ChangeTarget(); // Calls ChangeTarget Method.
         
     }
 
-    
-    void FixedUpdate()
+
+    private void FixedUpdate()
     {
         // Moves the Platform between 2 positions
         movingPlatform.position = Vector3.Lerp(movingPlatform.position, newPosition, smooth * Time.deltaTime);

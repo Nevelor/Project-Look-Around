@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour {
     /// starts with enabeling the mainMenu
     /// and disabeling the levelsMenu
     /// </summary>
-	void Start ()
+	private void Start ()
     {
         mainMenu.enabled = true;
         levelsMenu.enabled = false;

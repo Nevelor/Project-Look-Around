@@ -19,20 +19,20 @@ public class ColorChanger : MonoBehaviour
     public GameObject rightArm;
 
 
-	/// <summary>
+    /// <summary>
     /// it starts with calling the 
     /// ColorWhite method
     /// </summary>
-	void Start ()
+    private void Start ()
     {
         ColorWhite();
 	}
-	
-	/// <summary>
+
+    /// <summary>
     /// calls the method ColorWhite 
     /// every time you press the q button
     /// </summary>
-	void Update ()
+    private void Update ()
     {
         if(Input.GetKeyDown(KeyCode.Q))
         {
