@@ -9,27 +9,29 @@ public class MovingPlatform1 : MonoBehaviour
 {
 
     public Transform movingPlatform;
-    public Transform position1;
-    public Transform position2;
+    public Transform position1; // Fixed Point, used as Anker-point for Platform
+    public Transform position2; // Fixed Point, used as Anker-point for Platform
     public Vector3 newPosition;
     public string currentState;
-    public float smooth;
-    public float resetTime;
+    public float smooth; 
+    public float resetTime; //Time that is used till Method resets
 
-    // Use this for initialization
+    
     void Start()
     {
-        ChangeTarget();
+        ChangeTarget(); // Calls ChangeTarget Method.
+        
     }
 
-    // Update is called once per frame
+    
     void FixedUpdate()
     {
+        // Moves the Platform between 2 positions
         movingPlatform.position = Vector3.Lerp(movingPlatform.position, newPosition, smooth * Time.deltaTime);
 
     }
 
-    void ChangeTarget()
+    void ChangeTarget() //Methode that changes the position between pos. 1 and pos. 2.
     {
         if (currentState == "Moving to Position 1")
         {
