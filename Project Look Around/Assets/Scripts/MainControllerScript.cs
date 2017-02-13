@@ -160,11 +160,11 @@ public class MainControllerScript : MonoBehaviour
     }
 
     /// <summary>
-    ///Load the scene Level4
+    ///Load the scene MoreSoon
     /// </summary>
-    public void Load4()
+    public void LoadMoreSoon()
     {
-        SceneManager.LoadScene("Level4");
+        SceneManager.LoadScene("MoreSoon");
     }
 
     /// <summary>
