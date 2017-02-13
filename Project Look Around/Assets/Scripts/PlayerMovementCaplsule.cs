@@ -23,6 +23,21 @@ public class PlayerMovementCaplsule : MonoBehaviour
     public float gravity = 30f;
     private Vector3 moveDir = Vector3.zero;
 
+    /// <summary>
+    /// int that is used by the 
+    /// script Collectibles to safe
+    /// the number of the collectables
+    /// that the player has collected
+    /// </summary>
+    public static int collectableCounter;
+
+    /// <summary>
+    /// sets collectableCounter to 0
+    /// </summary>
+    private void Start()
+    {
+        collectableCounter = 0;
+    }
 
 
     /// <summary>
